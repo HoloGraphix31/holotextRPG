@@ -19,10 +19,12 @@ def mort():
 '''
 données stockées sous forme de liste
 def combat(stats_heros,stats_adversaire):
-    
-'''
 
-def combat(stats_heros,stats_ennemi):
-    nom_heros = stats_heros[0]
-    hp_heros = stats_heros[1]
-    
+'''
+#nom,hp,hp_max,atk,def,speed,dmg_rndm,dmg_fixe
+
+def combat(nom_heros,hp_heros,hp_max_heros,attaque_heros,defense_heros,vitesse_heros,attaque_random_heros,attaque_fixe_heros,nom_ennemi,hp_ennemi,hp_max_ennemi,attaque_ennemi,defense_ennemi,vitesse_ennemi,attaque_random_ennemi,attaque_fixe_ennemi):
+    if random.randint(20)+vitesse_heros > random.randint(20)+vitesse_ennemi:
+        #heros attaque en premier
+    else :
+        #ennemi attaque en premier
